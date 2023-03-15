@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="109dp"
+        android:layout_height="89dp"
+        android:background="#3F51B5"
+        android:onClick="bt1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <RadioButton
+        android:id="@+id/rb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RButton 1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintStart_toEndOf="@+id/cb1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <RadioButton
+        android:id="@+id/rb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RButton 3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toEndOf="@+id/cb3"
+        app:layout_constraintTop_toBottomOf="@+id/rb2"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <RadioButton
+        android:id="@+id/rb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RButton 2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toEndOf="@+id/cb2"
+        app:layout_constraintTop_toBottomOf="@+id/rb1"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="ChBox 3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb2"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="ChBox 2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb1"
+        app:layout_constraintVertical_bias="0.043" />
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="ChBox 1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
